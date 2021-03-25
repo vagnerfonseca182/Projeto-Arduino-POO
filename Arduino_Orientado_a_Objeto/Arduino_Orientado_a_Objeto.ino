@@ -36,12 +36,16 @@ class Piscar
       ledState = LOW;  // Turn it off
       previousMillis = currentMillis;  // tempo anterior 
       digitalWrite(ledPin, ledState);  // atualiza o LED
+       Serial.print("On_output_01");
+       millis();
     }
     else if ((ledState == LOW) && (currentMillis - previousMillis >= OffTime))
     {
       ledState = HIGH;  // turn it on
       previousMillis = currentMillis;   // tempo anterior 
       digitalWrite(ledPin, ledState);   // atualiza o LED
+      Serial.print("Off_output_01"); 
+       millis();
     }
   }
 };
@@ -99,8 +103,8 @@ Sweeper sweeper2(25);
 void setup() 
 { 
   Serial.begin(9600);
-  pinMode(2, INPUT_PULLUP); 
-  sweeper1.Attach(9);
+  pinMode(9, INPUT_PULLUP); 
+  sweeper1.Attach(11);
   sweeper2.Attach(10);
 } 
  
@@ -109,7 +113,7 @@ void loop()
 { 
   sweeper1.Update();
   
-  if(digitalRead(11) == HIGH)
+  if(digitalRead(8) == HIGH)
   {
      sweeper2.Update();
      led1.Update();
