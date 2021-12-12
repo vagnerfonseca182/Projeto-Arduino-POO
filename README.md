@@ -1,7 +1,7 @@
 # Projeto Arduino
- Arduino
- Essa È uma demostraÁ„o simples de uso da programaÁ„o orientada a objeto
-Portanto, agora temos tarefas em execuÁ„o de forma independente e com entrada do usu·rio. N„o h· atrasos para travar o processador. E nosso cÛdigo orientado a objetos eficiente deixa muito espaÁo para expans„o.
+
+ Essa √© uma demostra√ß√£o simples de uso da programa√ß√£o orientada a objeto
+Portanto, agora temos tarefas em execu√ß√£o de forma independente e com entrada do usu√°rio. N√£o h√° atrasos para travar o processador. E nosso c√≥digo orientado a objetos eficiente deixa muito espa√ßo para expans√£o.
 
 
 
